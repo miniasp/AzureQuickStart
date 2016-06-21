@@ -14,6 +14,8 @@
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
 
+using Microsoft.Azure;
+
 namespace DataTableStorage1Sample
 {
     using DataTableStorage1Sample.Model;
