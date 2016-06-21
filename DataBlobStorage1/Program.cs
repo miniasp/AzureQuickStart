@@ -14,6 +14,8 @@
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
 
+using Microsoft.Azure;
+
 namespace DataBlobStorage1Sample
 {
     using Microsoft.WindowsAzure;
@@ -117,7 +119,7 @@ namespace DataBlobStorage1Sample
             // Upload a BlockBlob to the newly created container
             Console.WriteLine("2. Uploading BlockBlob");
             CloudBlockBlob blockBlob = container.GetBlockBlobReference(ImageToUpload);
-            await blockBlob.UploadFromFileAsync(ImageToUpload, FileMode.Open);
+            await blockBlob.UploadFromFileAsync(ImageToUpload);
 
             // List all the blobs in the container 
             Console.WriteLine("3. List Blobs in Container");
