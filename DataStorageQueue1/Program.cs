@@ -13,6 +13,9 @@
 // organization, product, domain name, email address, logo, person,
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
+
+using Microsoft.Azure;
+
 namespace DataStorageQueue1Sample
 {
     using Microsoft.WindowsAzure;
